@@ -1,0 +1,616 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/revaanwarr/pemrograman-lanjut/blob/main/Phyton_Reva_ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**🖥️👩🏻‍💻PRAKTIKUM PEMROGRAMAN LANJUT🔥**\n",
+        "##**Pertemuan (1) PENDAHULUAN PHYTON - Senin, 14 Oktober 2024**\n",
+        "\n",
+        "👤 Nama: Reva Anwar / NRP: 2C2230003\n",
+        " / Kelas: III/A Sains Data\n",
+        "\n",
+        "💬Deskripsi Pembahasan Materi:\n",
+        "\n",
+        "1.1.  Beberapa karakteristik dari bahasa pemrograman Python:\n",
+        "\n",
+        "- Python bersifat case-sensitive, artinya perbedaan huruf besar dan huruf kecil menyebabkan\n",
+        "perbedaan makna sintaks.\n",
+        "\n",
+        "- Python sangat memerhatikan indentasi dan pergantian baris. Kesalahan indentasi dapat\n",
+        "menyebabkan gagal compile hingga kesalahan program.\n",
+        "\n",
+        "- Variabel di python bersifat implisit dan dinamis. Artinya, sebuah variabel tidak perlu dideskripsikan\n",
+        "tipe datanya.\n",
+        "\n",
+        "\n",
+        "1.2.Macam - macam tipe data‍\n",
+        "\n",
+        "- Bool(Boolean) : True atau False\n",
+        "\n",
+        "- Int(Bilangan bulat) : Seluruh bilangan bulat\n",
+        "\n",
+        "- Float(Bilangan real : Seluruh bilangan real\n",
+        "\n",
+        "- String(Teks) : Kumpulan karakter\n"
+      ],
+      "metadata": {
+        "id": "_bN6_LxQCJZT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#🤸🏻‍♀️ EKSPLORASI PRIBADI DI KELAS ✨"
+      ],
+      "metadata": {
+        "id": "N0U2Qjks8P9F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "itmMcxv88OIm",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "99411a85-b679-47cc-d6c5-e82d37a05080"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n",
+            "25.25\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "X = 101\n",
+        "Y= 4\n",
+        "\n",
+        "X//Y\n",
+        "X/Y\n",
+        "\n",
+        "print(X//Y)\n",
+        "print(X/Y)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Interpretasi coding:\n",
+        "\n",
+        "- Interpretasi Hasil:"
+      ],
+      "metadata": {
+        "id": "f1J9LJyv9-YC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#🧠 LATIHAN SOAL DI KELAS ⏱️"
+      ],
+      "metadata": {
+        "id": "KEGjH0_P9D1-"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem (1) Ganjil-Genap"
+      ],
+      "metadata": {
+        "id": "nt7-fY7s9PgC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Meminta input dari pengguna\n",
+        "N = int(input(\"Masukkan nilai N: \"))\n",
+        "\n",
+        "# Memeriksa apakah N adalah positif, negatif, atau nol\n",
+        "if N > 0:\n",
+        "    if N % 2 == 0:\n",
+        "        print(f\"{N} adalah bilangan positif genap\")\n",
+        "    else:\n",
+        "        print(f\"{N} adalah bilangan positif ganjil\")\n",
+        "elif N < 0:\n",
+        "    print(f\"{N} adalah bilangan negatif\")\n",
+        "else:\n",
+        "    print(\"N adalah nol\")"
+      ],
+      "metadata": {
+        "id": "h7si6sBj9Mr4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f9ac3cd2-3240-40fd-b71e-e9e35fcaa542"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan nilai N: 2\n",
+            "2 adalah bilangan positif genap\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Interpretasi coding:\n",
+        "\n",
+        "Meminta penggna masukkan nilai N, memeriksa aakah bilangan N lebih besar dari nol. jika benar dilanjutkan dengan memeriksa bilangan genap atau ganjil dengan if N % 2 == 0 digunakan untuk memeriksa apakah bilangan N habis dibagi 2, atau genap. Jika ini benar,bilangan tersebut adalah bilangan positif genap.Jika tidak habis dibagi 2 (kondisi else pada baris berikutnya), maka program menampilkan bahwa bilangan tersebut positif ganjil.\n",
+        "\n",
+        "Jika kondisi N > 0 tidak terpenuhi, maka kode elif N < 0 akan dieksekusi, yaitu ketika N lebih kecil dari nol maka bilangan negatif.Jika kedua kondisi tersebut salah (berarti N sama dengan nol), program akan menampilkan bahwa N adalah nol.\n",
+        "\n",
+        "- Interpretasi Hasil:\n",
+        "\n",
+        "Masukkan nilai N: 2\n",
+        "\n",
+        "2 adalah bilangan positif genap"
+      ],
+      "metadata": {
+        "id": "Wou8YKfJ9lvY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem (2) Kalkulator Sederhana"
+      ],
+      "metadata": {
+        "id": "Eucg6DUK9fgA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Meminta input angka dan operator dari pengguna\n",
+        "angka1 = int(input(\"Masukkan angka pertama: \"))\n",
+        "angka2 = int(input(\"Masukkan angka kedua: \"))\n",
+        "operator = input(\"Masukkan operator (+, -, *, /, %): \")\n",
+        "\n",
+        "# Memeriksa operator dan melakukan perhitungan\n",
+        "if operator == '+':\n",
+        "    hasil = angka1 + angka2\n",
+        "    print(f\"{angka1} + {angka2} = {hasil}\")\n",
+        "elif operator == '-':\n",
+        "    hasil = angka1 - angka2\n",
+        "    print(f\"{angka1} - {angka2} = {hasil}\")\n",
+        "elif operator == '*':\n",
+        "    hasil = angka1 * angka2\n",
+        "    print(f\"{angka1} * {angka2} = {hasil}\")\n",
+        "elif operator == '/':\n",
+        "    hasil = angka1 // angka2  # dibulatkan ke bawah\n",
+        "    print(f\"{angka1} / {angka2} = {hasil}\")\n",
+        "elif operator == '%':\n",
+        "    hasil = angka1 % angka2\n",
+        "    print(f\"{angka1} % {angka2} = {hasil}\")\n",
+        "else:\n",
+        "    print(\"Operator tidak valid.\")"
+      ],
+      "metadata": {
+        "id": "9uWMEZpP9hlB",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "10425dde-934d-4cde-e439-c5f5942a7563"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka pertama: 2\n",
+            "Masukkan angka kedua: 6\n",
+            "Masukkan operator (+, -, *, /, %): +\n",
+            "2 + 6 = 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Meminta input angka dan operator dari pengguna\n",
+        "angka1 = int(input(\"Masukkan angka pertama: \"))\n",
+        "angka2 = int(input(\"Masukkan angka kedua: \"))\n",
+        "operator = input(\"Masukkan operator (+, -, *, /, %): \")\n",
+        "\n",
+        "# Memeriksa operator dan melakukan perhitungan\n",
+        "if operator == '+':\n",
+        "    hasil = angka1 + angka2\n",
+        "    print(f\"{angka1} + {angka2} = {hasil}\")\n",
+        "elif operator == '-':\n",
+        "    hasil = angka1 - angka2\n",
+        "    print(f\"{angka1} - {angka2} = {hasil}\")\n",
+        "elif operator == '*':\n",
+        "    hasil = angka1 * angka2\n",
+        "    print(f\"{angka1} * {angka2} = {hasil}\")\n",
+        "elif operator == '/':\n",
+        "    hasil = angka1 // angka2  # dibulatkan ke bawah\n",
+        "    print(f\"{angka1} / {angka2} = {hasil}\")\n",
+        "elif operator == '%':\n",
+        "    hasil = angka1 % angka2\n",
+        "    print(f\"{angka1} % {angka2} = {hasil}\")\n",
+        "else:\n",
+        "    print(\"Operator tidak valid.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X36SM-cU1kU3",
+        "outputId": "987f53cb-0ecb-47e4-e280-5eb17befc761"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka pertama: 13\n",
+            "Masukkan angka kedua: 5\n",
+            "Masukkan operator (+, -, *, /, %): %\n",
+            "13 % 5 = 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Interpretasi coding:\n",
+        "\n",
+        "Meminta masukkan dua angka,angka prtama dan kedua. memilih operator mana yang akan digunakan kemudia membuat operasi tersebut dan mengeluarkan output yang sesuai. Tetapijika operator yang digunakan tidak sesuai maka akan muncul \"operator tidak valid\"\n",
+        "\n",
+        "- Interpretasi Hasil:\n",
+        "\n",
+        "contoh 1:\n",
+        "\n",
+        "Masukkan angka pertama: 2\n",
+        "\n",
+        "Masukkan angka kedua: 6\n",
+        "\n",
+        "Masukkan operator (+, -, *, /, %): +\n",
+        "\n",
+        "2 + 6 = 8\n",
+        "\n",
+        "contoh 2 :\n",
+        "\n",
+        "Masukkan angka pertama: 13\n",
+        "\n",
+        "Masukkan angka kedua: 5\n",
+        "\n",
+        "Masukkan operator (+, -, *, /, %): %\n",
+        "\n",
+        "13 % 5 = 3"
+      ],
+      "metadata": {
+        "id": "fM9Fo97_93Ni"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#🏆 POST TEST 🎯"
+      ],
+      "metadata": {
+        "id": "J_75vTSXKFGE"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem (1)"
+      ],
+      "metadata": {
+        "id": "twhHfrqiKSfV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Input harga dasar dan harga jual untuk setiap barang\n",
+        "harga_dasar_a = int(input(\"Masukkan harga dasar barang A: \"))\n",
+        "harga_jual_a = int(input(\"Masukkan harga jual barang A: \"))\n",
+        "harga_dasar_b = int(input(\"Masukkan harga dasar barang B: \"))\n",
+        "harga_jual_b = int(input(\"Masukkan harga jual barang B: \"))\n",
+        "harga_dasar_c = int(input(\"Masukkan harga dasar barang C: \"))\n",
+        "harga_jual_c = int(input(\"Masukkan harga jual barang C: \"))\n",
+        "\n",
+        "# Menghitung keuntungan untuk setiap barang\n",
+        "keuntungan_a = harga_jual_a - harga_dasar_a\n",
+        "keuntungan_b = harga_jual_b - harga_dasar_b\n",
+        "keuntungan_c = harga_jual_c - harga_dasar_c\n",
+        "\n",
+        "# Menentukan barang dengan keuntungan terbesar\n",
+        "if keuntungan_a > keuntungan_b and keuntungan_a > keuntungan_c:\n",
+        "  barang_terbaik = \"A\"\n",
+        "elif keuntungan_b > keuntungan_a and keuntungan_b > keuntungan_c:\n",
+        "  barang_terbaik = \"B\"\n",
+        "else:\n",
+        "  barang_terbaik = \"C\"\n",
+        "\n",
+        "# Menampilkan barang yang harus ditawarkan\n",
+        "print(f\"Barang yang harus ditawarkan adalah barang {barang_terbaik}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p5J1ACnu5WaJ",
+        "outputId": "9fb064a9-98ad-4f64-838c-d6d7d0c79c34"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan harga dasar barang A: 8\n",
+            "Masukkan harga jual barang A: 11\n",
+            "Masukkan harga dasar barang B: 7\n",
+            "Masukkan harga jual barang B: 12\n",
+            "Masukkan harga dasar barang C: 6\n",
+            "Masukkan harga jual barang C: 12\n",
+            "Barang yang harus ditawarkan adalah barang C\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Interpretasi coding:\n",
+        "\n",
+        "Meminta pengguna memasukkan harga dasar dan harga jual dari tiga barang (A,B, dan C).kemudian menghitung keuntungan dengan mengurangkan harga dasar dengan harga jualnya.\n",
+        "Struktur if-elif-else digunakan untuk memeriksa mana di antara keuntungan_a, keuntungan_b, atau keuntungan_c yang paling besar:\n",
+        "\n",
+        "\t•\tJika keuntungan_a terbesar, variabel barang_terbaik diset menjadi \"A\".\n",
+        "\t•\tJika keuntungan_b terbesar, variabel barang_terbaik diset menjadi \"B\".\n",
+        "\t•\tJika tidak ada yang lebih besar dari keuntungan_c, maka barang_terbaik diset menjadi \"C\".\n",
+        "Menampilkan Barang dengan Keuntungan Terbesar\n",
+        "\n",
+        "- Interpretasi hasil:\n",
+        "\n",
+        "Test Case 1 :\n",
+        "\n",
+        "Masukkan harga dasar barang A: 10\n",
+        "\n",
+        "Masukkan harga jual barang A: 15\n",
+        "\n",
+        "Masukkan harga dasar barang B: 10\n",
+        "\n",
+        "Masukkan harga jual barang B: 12\n",
+        "\n",
+        "Masukkan harga dasar barang C: 10\n",
+        "\n",
+        "Masukkan harga jual barang C: 11\n",
+        "\n",
+        "Barang yang harus ditawarkan adalah barang A\n",
+        "\n",
+        "Test case 2 :\n",
+        "\n",
+        "Masukkan harga dasar barang A: 8\n",
+        "\n",
+        "Masukkan harga jual barang A: 11\n",
+        "\n",
+        "Masukkan harga dasar barang B: 7\n",
+        "\n",
+        "Masukkan harga jual barang B: 12\n",
+        "\n",
+        "Masukkan harga dasar barang C: 6\n",
+        "\n",
+        "Masukkan harga jual barang C: 12\n",
+        "\n",
+        "Barang yang harus ditawarkan adalah barang C"
+      ],
+      "metadata": {
+        "id": "t9x---59KWVI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem (2)"
+      ],
+      "metadata": {
+        "id": "Wz0KZ9Cx8FRy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def kelas_mahasiswa(nrp_akhir):\n",
+        "    nrp_akhir = int(nrp_akhir)\n",
+        "\n",
+        "    # menentukan kelas berdasarkan rentang NRP\n",
+        "    if nrp_akhir > 300:\n",
+        "        kelas = \"K7\" if nrp_akhir % 2 != 0 else \"K8\"\n",
+        "    elif nrp_akhir > 200:\n",
+        "        kelas = \"K5\" if nrp_akhir % 2 != 0 else \"K6\"\n",
+        "    elif nrp_akhir > 100:\n",
+        "        kelas = \"K3\" if nrp_akhir % 2 != 0 else \"K4\"\n",
+        "    elif nrp_akhir > 0:\n",
+        "        kelas = \"K1\" if nrp_akhir % 2 != 0 else \"K2\"\n",
+        "    else:\n",
+        "        kelas = \"NRP Tidak Valid\"\n",
+        "\n",
+        "    return kelas\n",
+        "\n",
+        "# input 3 digit terakhir NRP mahasiswa\n",
+        "nrp = input(\"Masukkan 3 digit terakhir NRP: \")\n",
+        "kelas = kelas_mahasiswa(nrp)\n",
+        "\n",
+        "# menampilkan hasil\n",
+        "print(f\"Mahasiswa dengan NRP {nrp} berada di kelas {kelas}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mOqKebr48KIR",
+        "outputId": "ae323c03-cf93-4ce7-e979-43266c356d12"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan 3 digit terakhir NRP: 121\n",
+            "Mahasiswa dengan NRP 121 berada di kelas K3.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def kelas_mahasiswa(nrp_akhir):\n",
+        "    nrp_akhir = int(nrp_akhir)\n",
+        "\n",
+        "    # menentukan kelas berdasarkan rentang NRP\n",
+        "    if nrp_akhir > 300:\n",
+        "        kelas = \"K7\" if nrp_akhir % 2 != 0 else \"K8\"\n",
+        "    elif nrp_akhir > 200:\n",
+        "        kelas = \"K5\" if nrp_akhir % 2 != 0 else \"K6\"\n",
+        "    elif nrp_akhir > 100:\n",
+        "        kelas = \"K3\" if nrp_akhir % 2 != 0 else \"K4\"\n",
+        "    elif nrp_akhir > 0:\n",
+        "        kelas = \"K1\" if nrp_akhir % 2 != 0 else \"K2\"\n",
+        "    else:\n",
+        "        kelas = \"NRP Tidak Valid\"\n",
+        "\n",
+        "    return kelas\n",
+        "\n",
+        "# input 3 digit terakhir NRP mahasiswa\n",
+        "nrp = input(\"Masukkan 3 digit terakhir NRP: \")\n",
+        "kelas = kelas_mahasiswa(nrp)\n",
+        "\n",
+        "# menampilkan hasil\n",
+        "print(f\"Mahasiswa dengan NRP {nrp} berada di kelas {kelas}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YIfUQnYI8wMy",
+        "outputId": "8b61d4f7-9de4-45bb-8190-8c01313d51e5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan 3 digit terakhir NRP: 544\n",
+            "Mahasiswa dengan NRP 544 berada di kelas K8.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Interpretasi Coding :\n",
+        "\n",
+        "1.\tFungsi kelas_mahasiswa:\n",
+        "\t•\tMenerima input tiga digit terakhir NRP (nrp_akhir) dan mengonversinya menjadi bilangan bulat.\n",
+        "\n",
+        "\t•\tMenggunakan kondisi if-elif untuk menentukan kelas:\n",
+        "\n",
+        "\t•\tJika nrp_akhir > 300, kelasnya K7 (ganjil) atau K8 (genap).\n",
+        "\n",
+        "\t•\tJika nrp_akhir > 200, kelasnya K5 (ganjil) atau K6 (genap).\n",
+        "\n",
+        "\t•\tJika nrp_akhir > 100, kelasnya K3 (ganjil) atau K4 (genap).\n",
+        "\n",
+        "\t•\tJika nrp_akhir > 0, kelasnya K1 (ganjil) atau K2 (genap).\n",
+        "\n",
+        "\t•\tJika nrp_akhir ≤ 0, hasilnya “NRP Tidak Valid.”\n",
+        "\n",
+        "\t•\tFungsi mengembalikan kelas yang sesuai.\n",
+        "\n",
+        "\t2.\tPenggunaan Fungsi:\n",
+        "\n",
+        "\t•\tProgram meminta tiga digit terakhir NRP dari pengguna, memanggil kelas_mahasiswa, dan menampilkan kelas berdasarkan NRP tersebut.\n",
+        "\n",
+        "  Interpretasi hasil :\n",
+        "\n",
+        "  - Test case 1 :\n",
+        "\n",
+        "Masukkan 3 digit terakhir NRP: 121\n",
+        "\n",
+        "Mahasiswa dengan NRP 121 berada di kelas K3.\n",
+        "\n",
+        "- Test case 2 :\n",
+        "\n",
+        "Masukkan 3 digit terakhir NRP: 544\n",
+        "\n",
+        "Mahasiswa dengan NRP 544 berada di kelas K8."
+      ],
+      "metadata": {
+        "id": "sdRQgask81ob"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "📌Catatan:\n",
+        "  - Notebook python ini dibuat untuk memudahkan temen-temen belajar ngoding dan pengumpulan tugas.\n",
+        "  - Silakan download notebook ini lalu upload di Google Collab milik kalian agar format `pertemuan`, `topik pertemuan`,\n",
+        "`tanggal`, `deskripsi pembahasan materi`, `baris coding` dan `interpretasi` bisa disesuaikan dengan kebutuhan teman-teman.\n",
+        "\n",
+        "  - Interpretasi coding dan hasil dimaksudkan agar teman-teman semakin memahami apa yang dipelajari.\n",
+        "\n",
+        "  - Deskripsi pembahasan materi dimaksudkan agar teman-teman semakin memahami apa fokus yang dipelajari.\n",
+        "\n",
+        "  - Tulisan di setiap sebelum baris code disebut `markdown`. Ada beberapa jenis simbol yang memudahkan kepenulisan `markdown` kita, yaitu seperti : untuk mengatur ukuran tulisan biasanya tulisan pada header menggunakan ini`#`, `##`, `###`, untuk membuat pointer menggunakan ini `-`, untuk membuat tulisan ter-highlight menggunakan ini *` `* , untuk short-cut membuat tulisan jadi **bold** gunakan ini `** **`, dan untuk *tulisan miring* gunakan ini `* *` .\n",
+        "\n",
+        "  - Semangat belajar! 🌟✨\n",
+        "\n",
+        "©️ LABORATORIUM SAINS DATA 2024"
+      ],
+      "metadata": {
+        "id": "D-tRQnbQK69l"
+      }
+    }
+  ]
+}
